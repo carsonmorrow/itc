@@ -1,0 +1,502 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winresrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winresrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROPDISPLAY DIALOGEX 129, 7, 327, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "Use display fade effects",IDC_CHKUSEFADE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,104,113,10
+    LTEXT           "Transparency:",IDC_STATIC,14,78,54,8
+    CONTROL         "Keep display on top of all other windows",IDC_CHKTOPMOST,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,134,145,10
+    LTEXT           "seconds",IDC_STATIC,102,174,31,8
+    CONTROL         "",IDC_SLDTRANSPARENCY,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,68,75,110,15
+    CONTROL         "Disable display always",IDC_CHKUSEVISUALS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,18,105,10
+    GROUPBOX        "Visual Effects",IDC_STATIC,7,64,187,54
+    LTEXT           "Maximum",IDC_STATIC,155,91,30,8
+    LTEXT           "Disabled",IDC_STATIC,63,91,28,8
+    GROUPBOX        "Visibility",IDC_STATIC,7,122,267,99
+    CONTROL         "Always show display",IDC_RDOALWAYSSHOW,"Button",BS_AUTORADIOBUTTON,14,147,81,10
+    CONTROL         "Show display for",IDC_RDOSHOWFORX,"Button",BS_AUTORADIOBUTTON,14,173,64,10
+    EDITTEXT        IDC_EDTINFOTIME,80,172,18,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Display",IDC_STATIC,7,7,187,54
+    CONTROL         "Disable display when iTunes is active",IDC_CHKHIDEDISPLAYITUNES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,32,164,10
+    CONTROL         "Show at end of track for",IDC_CHKSHOWATEND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,203,91,10
+    LTEXT           "seconds,",IDC_STATIC,140,204,30,8
+    EDITTEXT        IDC_EDTINFOTIMEEND,118,202,18,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDTOFFSETBEGIN,177,187,18,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDTOFFSETEND,174,202,18,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "seconds after start",IDC_STATIC,199,189,62,8
+    LTEXT           "seconds before at end",IDC_STATIC,196,204,73,8
+    CONTROL         "Show at start of track for",IDC_CHKSHOWATSTART,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,188,95,10
+    LTEXT           "seconds,",IDC_STATIC,144,189,30,8
+    EDITTEXT        IDC_EDTINFOTIMESTART,121,187,18,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Disable display for tracks less than",IDC_CHKDISABLESHORTTRACKS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,46,122,10
+    LTEXT           "seconds",IDC_STATIC,162,47,27,8
+    EDITTEXT        IDC_EDTDISABLESHORT,138,45,20,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Except when iTunes is paused",IDC_CHKEXCEPTWHENPAUSED,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,160,112,10
+END
+
+IDD_PROPART DIALOGEX 129, 7, 327, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "Display album artwork",IDC_CHKSHOWART,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,86,10
+    CONTROL         "Scale art to",IDC_RBARTMODE2,"Button",BS_AUTORADIOBUTTON,22,74,51,10
+    CONTROL         "Scale art to text height",IDC_RBARTMODE3,"Button",BS_AUTORADIOBUTTON,22,88,90,10
+    EDITTEXT        IDC_EDTARTCONST,74,72,23,12,ES_AUTOHSCROLL
+    LTEXT           "pixels",IDC_STATIC,102,76,19,8
+    CONTROL         "Search album directory for art",IDC_CHKUSEFOLDERART,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,20,112,10
+    GROUPBOX        "Sizing",IDC_STATIC,7,62,125,43
+    CONTROL         "Always override album art",IDC_CHKSTATICART,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,34,99,10
+    EDITTEXT        IDC_EDTSTATICART,66,45,142,14,ES_AUTOHSCROLL
+    LTEXT           "Override file:",IDC_STATIC,21,48,43,8
+    PUSHBUTTON      "...",IDC_BTNSTATICART,209,45,15,14
+END
+
+IDD_PROPMISC DIALOGEX 129, 7, 327, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "Show icon in system tray",IDC_CHKSHOWINTRAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,15,120,10
+END
+
+IDD_PROPSTARTSHUT DIALOGEX 129, 7, 327, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "Log onto Windows",IDC_CHKSTARTWINDOWS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,17,127,10
+    CONTROL         "Open iTunesControl",IDC_CHKSTARTITUNES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,65,86,10
+    CONTROL         "Close iTunesControl",IDC_CHKQUITITUNES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,188,65,104,10
+    CONTROL         "Ask before closing iTunes",IDC_CHKPROMPTQUIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,200,78,97,10
+    CONTROL         "Close iTunes",IDC_CHKQUITWITHITUNES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,188,17,64,10
+    CONTROL         "Open iTunes",IDC_CHKSTARTWITHITUNES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,30,123,10
+    GROUPBOX        "Run iTunesControl when I...",IDC_STATIC,7,7,142,39
+    GROUPBOX        "Quit iTunesControl when I...",IDC_STATIC,180,7,142,39
+    GROUPBOX        "Run iTunes when I...",IDC_STATIC,7,54,142,39
+    GROUPBOX        "Quit iTunes when I...",IDC_STATIC,180,54,142,39
+    CONTROL         "Use a hotkey",IDC_CHKSTARTWITHHOTKEYS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,78,86,10
+    CONTROL         "Minimize iTunes on startup",IDC_CHKMINIMIZEATSTART,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,101,100,10
+END
+
+IDD_PROPHOTKEYS DIALOGEX 129, 7, 327, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Reset Hotkeys",IDC_BTNKEYSDEFS,258,225,62,14
+    EDITTEXT        IDC_EDTHOTKEY,26,227,118,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LSTHOTKEYS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,7,313,214
+    LTEXT           "Key:",IDC_STATIC,7,229,16,8
+END
+
+IDD_PROPLAYOUT DIALOGEX 129, 7, 327, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDTOSDTEXT,18,43,227,51,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    COMBOBOX        IDC_CMBCONSTANT,60,16,130,164,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Insert",IDC_BTNINSERT,195,15,50,14
+    LTEXT           "Align text:",IDC_STATIC,18,100,34,8
+    COMBOBOX        IDC_CMBJUSTIFY,57,98,59,87,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDTITUNESTITLE,101,130,144,12,ES_AUTOHSCROLL
+    LTEXT           "iTunes window title:",IDC_STATIC,20,132,74,8
+    LTEXT           "Copy Song Info format:",IDC_STATIC,20,148,77,8
+    EDITTEXT        IDC_EDTCSIFORMAT,101,146,144,12,ES_AUTOHSCROLL
+    CONTROL         "Display missing tags",IDC_CHKMISSINGTAGS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,172,123,10
+    GROUPBOX        "Main Display",IDC_STATIC,7,7,248,111
+    LTEXT           "Constants:",IDC_STATIC,18,18,36,8
+    GROUPBOX        "Auxillary Formats",IDC_STATIC,7,120,248,47
+    LTEXT           "Display text:",IDC_STATIC,18,32,42,8
+    LTEXT           "Position text:",IDC_STATIC,136,100,44,8
+    COMBOBOX        IDC_CMBPOSTEXT,186,98,59,87,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLGCONFIGMAIN DIALOGEX 0, 0, 464, 280
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "iTunesControl Configuration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TRELIST,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | TVS_NOTOOLTIPS | TVS_NOHSCROLL | WS_BORDER | WS_TABSTOP,7,7,115,266
+    PUSHBUTTON      "Close",IDC_BTNCLOSE,407,259,50,14
+    PUSHBUTTON      "Reset All",IDC_BTNRESETALL,129,259,50,14
+    PUSHBUTTON      "Apply",IDC_BTNAPPLY,185,259,50,14
+END
+
+IDD_DLGCOLORSFONTS DIALOGEX 129, 7, 327, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Static",IDC_COLOR_BK,72,111,111,11,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_COLOR_FONT,72,94,111,11,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_COLOR_BORDER,72,128,111,11,SS_NOTIFY | WS_BORDER
+    LTEXT           "Background:",IDC_STATIC,17,112,41,8
+    LTEXT           "Font:",IDC_STATIC,17,96,18,8
+    LTEXT           "Display Border:",IDC_STATIC,17,130,50,8
+    LTEXT           "Font Style:",IDC_STATIC,17,26,36,8
+    CTEXT           "Static",IDC_FONT_STYLE,58,18,217,26,SS_NOTIFY | SS_CENTERIMAGE | WS_BORDER
+    GROUPBOX        "Colors",IDC_STATIC,7,82,186,99
+    CONTROL         "Use outline mode",IDC_CHKOUTLINEMODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,49,98,10
+    GROUPBOX        "Font Options",IDC_STATIC,7,7,277,71
+    LTEXT           "Art Border:",IDC_STATIC,17,147,37,8
+    LTEXT           "Static",IDC_COLOR_ART,72,145,111,11,SS_NOTIFY | WS_BORDER
+    CONTROL         "Use drop shadow",IDC_CHKUSEDROPSHADOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,62,71,10
+    LTEXT           "Drop Shadow:",IDC_STATIC,17,164,46,8
+    LTEXT           "Static",IDC_COLOR_DROP,72,162,111,11,SS_NOTIFY | WS_BORDER
+END
+
+IDD_DLGPOSITION DIALOGEX 129, 7, 327, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Dynamically shrink display",IDC_CHKFORCEWIDTH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,53,124,10
+    COMBOBOX        IDC_CMBDISPLAYSIZE,90,16,59,92,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Display size:",IDC_STATIC,16,19,40,8
+    LTEXT           "Display border width:",IDC_STATIC,16,72,70,8
+    COMBOBOX        IDC_CMBBORDERWIDTH,90,70,59,106,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Use monitor number:",IDC_STATIC,192,37,68,8
+    COMBOBOX        IDC_CMBMONITOR,264,35,27,81,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Size",IDC_STATIC,7,7,150,102
+    GROUPBOX        "Position",IDC_STATIC,170,7,136,62
+    CONTROL         "",IDC_PICPOSITION,"Static",SS_BLACKFRAME | SS_NOTIFY,23,144,74,69
+    LTEXT           "Display center location:",IDC_STATIC,16,131,76,8
+    EDITTEXT        IDC_EDTCUSTOMDISPSIZE,90,33,38,14,ES_AUTOHSCROLL
+    LTEXT           "px",IDC_STATIC,133,36,9,8
+    LTEXT           "Custom size:",IDC_STATIC,16,36,42,8
+    LTEXT           "Art border width:",IDC_STATIC,16,91,60,8
+    COMBOBOX        IDC_CMBARTBORDERWIDTH,90,89,59,106,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Display on a single monitor",IDC_RDOSINGLEMONITOR,
+                    "Button",BS_AUTORADIOBUTTON,179,23,101,10
+    CONTROL         "Display on all monitors",IDC_RDOALLMONITORS,"Button",BS_AUTORADIOBUTTON,179,52,87,10
+    GROUPBOX        "Location",IDC_STATIC,7,117,102,105
+END
+
+IDD_DLGFEATURES DIALOGEX 129, 7, 327, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Short Jump:",IDC_STATIC,17,19,40,8
+    LTEXT           "Long Jump:",IDC_STATIC,17,35,38,8
+    EDITTEXT        IDC_EDTJUMPONEVALUE,59,17,26,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDTJUMPTWOVALUE,59,34,26,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CMBJUMPONETYPE,89,17,98,134,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMBJUMPTWOTYPE,89,34,98,128,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Quick Playlist playlist:",IDC_STATIC,17,71,70,8
+    EDITTEXT        IDC_EDTQUICKPLAYLIST,91,69,90,12,ES_AUTOHSCROLL
+    CONTROL         "Store tags in Grouping field of files",IDC_CHKGROUPINGTAG,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,103,126,10
+    EDITTEXT        IDC_EDTVOLCHGINT,111,136,27,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Volume change percentage:",IDC_STATIC,17,138,91,10
+    GROUPBOX        "Short/Long Jumps",IDC_STATIC,7,7,186,48
+    GROUPBOX        "Quick Playlist",IDC_STATIC,7,59,186,28
+    GROUPBOX        "File Tagging",IDC_STATIC,7,92,186,27
+    GROUPBOX        "Volume Up/Down",IDC_STATIC,7,126,186,27
+    GROUPBOX        "Track Rating Increment/Decrement",IDC_STATIC,7,159,186,31
+    LTEXT           "Change by:",IDC_STATIC,18,172,38,8
+    COMBOBOX        IDC_CMBRATINGDELTA,60,170,71,119,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Delete Track",IDC_STATIC,7,196,186,40
+    CONTROL         "Prompt to delete track",IDC_CHKPROMPTTODELETE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,222,127,10
+    CONTROL         "Delete from disk",IDC_CHKDELETEFROMDISK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,208,114,10
+END
+
+IDD_PROPADVANCED DIALOGEX 129, 7, 327, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "Warn before closing configuration utility with unsaved changes",IDC_CHKWARNSAVECHGS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,18,217,10
+    PUSHBUTTON      "Open Configuration Folder",IDC_BTNOPENCFGFLDR,15,50,116,14,BS_MULTILINE
+    GROUPBOX        "Warnings",IDC_STATIC,7,7,234,26
+    GROUPBOX        "Folders",IDC_STATIC,7,39,135,34
+    GROUPBOX        "Display",IDC_STATIC,7,78,134,41
+    EDITTEXT        IDC_EDTDROPSHADOWOFFSET,86,88,25,14,ES_AUTOHSCROLL
+    LTEXT           "Drop shadow offset:",IDC_STATIC,15,91,67,8
+    LTEXT           "pixels",IDC_STATIC,115,91,19,8
+    CONTROL         "Allow blank lines",IDC_CHKALLOWBLANKS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,104,67,10
+    GROUPBOX        "Hotkeys",IDC_STATIC,7,125,198,40
+    CONTROL         "Ignore keyboard media keys when iTunes has focus",IDC_CHKIGNOREACONFOCUS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,136,181,10
+    CONTROL         """Repeat Mode"" hotkey only toggles repeat one mode",IDC_CHKONLYTOGGLEREPEATONE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,150,185,10
+END
+
+IDD_PROPSONGSEARCH DIALOGEX 129, 7, 327, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Results",IDC_STATIC,7,7,186,31
+    LTEXT           "Maximum number of results:",IDC_STATIC,18,19,91,8
+    EDITTEXT        IDC_EDTMAXSSRESULTS,113,17,32,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Search current playlist",IDC_RDOSEARCHCURRENT,"Button",BS_AUTORADIOBUTTON,18,55,87,10
+    CONTROL         "Search entire library",IDC_RDOSEARCHLIBRARY,"Button",BS_AUTORADIOBUTTON,18,69,81,10
+    GROUPBOX        "Location",IDC_STATIC,7,44,186,40
+    GROUPBOX        "Actions",IDC_STATIC,7,91,186,68
+    LTEXT           "Enter:",IDC_STATIC,18,106,44,8
+    LTEXT           "Ctrl + Enter:",IDC_STATIC,18,142,48,8
+    COMBOBOX        IDC_CMBENTERACTION,67,103,115,51,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMBCTRLACTION,67,139,116,56,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMBSHIFTACTION,67,121,115,52,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Shift + Enter:",IDC_STATIC,18,124,48,8
+END
+
+IDD_PROPRATINGS DIALOGEX 129, 7, 327, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Ratings Display",IDC_STATIC,7,7,219,50
+    CONTROL         "Text",IDC_RDOTEXT,"Button",BS_AUTORADIOBUTTON,17,42,31,10
+    CONTROL         "Images",IDC_RDOIMAGE,"Button",BS_AUTORADIOBUTTON,17,30,39,10
+    GROUPBOX        "Text Ratings",IDC_STATIC,7,184,219,40
+    GROUPBOX        "Image Ratings",IDC_STATIC,7,119,219,60
+    PUSHBUTTON      "Full Star",IDC_BTNFULLSTAR,17,135,50,14
+    PUSHBUTTON      "Half Star",IDC_BTNHALFSTAR,90,135,50,14
+    PUSHBUTTON      "Empty Star",IDC_BTNEMPTYSTAR,163,135,50,14
+    LTEXT           "Full:",IDC_STATIC,17,204,14,8
+    EDITTEXT        IDC_EDTFULLCHAR,33,200,15,14,ES_AUTOHSCROLL
+    LTEXT           "Half:",IDC_STATIC,74,204,16,8
+    EDITTEXT        IDC_EDTHALFCHAR,93,200,15,14,ES_AUTOHSCROLL
+    LTEXT           "Empty:",IDC_STATIC,131,204,24,8
+    EDITTEXT        IDC_EDTEMPTYCHAR,161,200,15,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STCFULLSTAR,"Static",SS_BITMAP,17,151,15,13
+    CONTROL         "",IDC_STCHALFSTAR,"Static",SS_BITMAP,90,151,15,13
+    CONTROL         "",IDC_STCEMPTYSTAR,"Static",SS_BITMAP,163,151,15,13
+    CONTROL         "Shapes",IDC_RDOSHAPES,"Button",BS_AUTORADIOBUTTON,17,18,39,10
+    GROUPBOX        "Shapes",IDC_STATIC,7,63,219,51
+    COMBOBOX        IDC_CMBSHAPETYPE,52,74,77,54,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMBSHAPESTYLE,52,93,77,51,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Shape:",IDC_STATIC,15,76,24,8
+    LTEXT           "Fill Style:",IDC_STATIC,15,95,30,8
+    LTEXT           "Outline:",IDC_STATIC,143,76,26,8
+    LTEXT           "Fill:",IDC_STATIC,143,95,12,8
+    LTEXT           "Static",IDC_STCSHAPEOUTLINE,174,74,43,11,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STCSHAPEFILL,174,94,43,11,SS_NOTIFY | WS_BORDER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,63,134,0
+ PRODUCTVERSION 0,63,134,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Carson Morrow"
+            VALUE "FileDescription", "iTunesControl Configuration Application"
+            VALUE "FileVersion", "0.63.134.0"
+            VALUE "InternalName", "iTunesControl"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2015 Carson Morrow, All rights reserved"
+            VALUE "OriginalFilename", "config.exe"
+            VALUE "PrivateBuild", "134"
+            VALUE "ProductName", "iTunesControl"
+            VALUE "ProductVersion", "0.63.134.0"
+            VALUE "Website", "http://itunescontrol.com"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_PROPDISPLAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_PROPART, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+    END
+
+    IDD_PROPMISC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+    END
+
+    IDD_PROPSTARTSHUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+    END
+
+    IDD_PROPHOTKEYS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_PROPLAYOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+    END
+
+    IDD_DLGCONFIGMAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 457
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 273
+    END
+
+    IDD_DLGCOLORSFONTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 318
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_DLGPOSITION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_DLGFEATURES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_PROPADVANCED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+    END
+
+    IDD_PROPSONGSEARCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_PROPRATINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_LOGO                ICON                    "Settings.ico"
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
