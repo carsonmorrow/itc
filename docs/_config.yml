@@ -1,1 +1,4 @@
 theme: jekyll-theme-tactile
+title: iTunesControl
+description: Custom hotkeys for iTunes
+show_downloads: true
