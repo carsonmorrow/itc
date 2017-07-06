@@ -12,4 +12,5 @@ iTunesControl is a free, lightweight solution that adds many of the features tha
 * Support for external programs such as AutoHotkey
 
 ## Downloads
+
 iTunesControl source is available on GitHub. A binary release is available from the [GitHub releases page](https://github.com/carsonmorrow/itc/releases/tag/v0.63). 
