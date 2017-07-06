@@ -11,6 +11,6 @@ iTunesControl is a free, lightweight solution that adds many of the features tha
 * Display supports track information in all languages and character sets
 * Support for external programs such as AutoHotkey
 
-## Downloads
+## Download
 
 iTunesControl source is available on GitHub. A binary release is available from the [GitHub releases page](https://github.com/carsonmorrow/itc/releases/tag/v0.63). 
