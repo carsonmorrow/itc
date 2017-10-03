@@ -15,6 +15,9 @@ iTunesControl is a lightweight application that adds many of the features that i
 
 iTunesControl can be built with [Visual Studio 2015 Community](https://www.visualstudio.com/en-us/products/vs-2015-product-editions.aspx).
 
+### Download
+
+iTunesControl source is available on GitHub. A binary release is available from the [GitHub releases page](https://github.com/carsonmorrow/itc/releases/tag/v0.63).
 
 ### License
 
